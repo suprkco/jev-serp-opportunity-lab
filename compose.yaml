@@ -1,0 +1,6 @@
+services:
+  demo:
+    build: .
+    volumes: ["reports:/app/output"]
+volumes:
+  reports:

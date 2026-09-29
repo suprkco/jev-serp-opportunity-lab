@@ -1,0 +1,10 @@
+[
+ {"query":"read-only SQL MCP server","title":"SQL MCP analytics guide","snippet":"A tutorial explains how to restrict database access to read-only queries through an MCP server.","fixture_choice":"matches"},
+ {"query":"read-only SQL MCP server","title":"Managed database pricing","snippet":"Compare subscription tiers and storage pricing for hosted SQL databases.","fixture_choice":"off_intent"},
+ {"query":"RAG citation evaluation","title":"Measure citation quality","snippet":"Evaluate retrieval and verify whether generated claims are supported by cited passages.","fixture_choice":"matches"},
+ {"query":"RAG citation evaluation","title":"Introducing our assistant","snippet":"Discover the future of productive work. Learn more today.","fixture_choice":"insufficient","fixture_confidence":0.45},
+ {"query":"LangGraph human approval tutorial","title":"Build persistent review gates","snippet":"A walkthrough of LangGraph interrupts and SQLite checkpoints for human approval.","fixture_choice":"matches"},
+ {"query":"LangGraph human approval tutorial","title":"Workflow software discounts","snippet":"Our subscription sale ends soon. Sign up for team workflow software.","fixture_choice":"off_intent"},
+ {"query":"local document search privacy","title":"Local document indexing","snippet":"Keep document processing and retrieval on your own machine without a remote indexing service.","fixture_choice":"matches"},
+ {"query":"local document search privacy","title":"Document tools","snippet":"A directory lists many document tools, with no details about processing or privacy.","fixture_choice":"insufficient","fixture_confidence":0.4}
+]

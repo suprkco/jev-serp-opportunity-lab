@@ -1,0 +1,262 @@
+{
+  "mode": "fixture",
+  "disclaimer": "SIMULATED RESPONSES: no Jev API calls or model benchmark.",
+  "results": [
+    {
+      "query": "read-only SQL MCP server",
+      "title": "SQL MCP analytics guide",
+      "snippet": "A tutorial explains how to restrict database access to read-only queries through an MCP server.",
+      "answers": {
+        "intent": {
+          "type": "choice",
+          "choice": "matches",
+          "probabilities": {
+            "insufficient": 0.05,
+            "matches": 0.9,
+            "off_intent": 0.05
+          },
+          "confidence": 0.9
+        },
+        "thin_evidence": {
+          "type": "noul",
+          "noul": 0.8
+        }
+      },
+      "model": "SIMULATED — NOT JEV",
+      "usage": null,
+      "elapsed_ms": null,
+      "provenance": "manufactured-fixture",
+      "decision": {
+        "route": "no_clear_intent_gap",
+        "requires_page_review": true,
+        "intent": "matches",
+        "confidence": 0.9
+      },
+      "lexical_baseline": "matches"
+    },
+    {
+      "query": "read-only SQL MCP server",
+      "title": "Managed database pricing",
+      "snippet": "Compare subscription tiers and storage pricing for hosted SQL databases.",
+      "answers": {
+        "intent": {
+          "type": "choice",
+          "choice": "off_intent",
+          "probabilities": {
+            "insufficient": 0.05,
+            "matches": 0.05,
+            "off_intent": 0.9
+          },
+          "confidence": 0.9
+        },
+        "thin_evidence": {
+          "type": "noul",
+          "noul": 0.8
+        }
+      },
+      "model": "SIMULATED — NOT JEV",
+      "usage": null,
+      "elapsed_ms": null,
+      "provenance": "manufactured-fixture",
+      "decision": {
+        "route": "investigate_intent_gap",
+        "requires_page_review": true,
+        "intent": "off_intent",
+        "confidence": 0.9
+      },
+      "lexical_baseline": "off_intent"
+    },
+    {
+      "query": "RAG citation evaluation",
+      "title": "Measure citation quality",
+      "snippet": "Evaluate retrieval and verify whether generated claims are supported by cited passages.",
+      "answers": {
+        "intent": {
+          "type": "choice",
+          "choice": "matches",
+          "probabilities": {
+            "insufficient": 0.05,
+            "matches": 0.9,
+            "off_intent": 0.05
+          },
+          "confidence": 0.9
+        },
+        "thin_evidence": {
+          "type": "noul",
+          "noul": 0.8
+        }
+      },
+      "model": "SIMULATED — NOT JEV",
+      "usage": null,
+      "elapsed_ms": null,
+      "provenance": "manufactured-fixture",
+      "decision": {
+        "route": "no_clear_intent_gap",
+        "requires_page_review": true,
+        "intent": "matches",
+        "confidence": 0.9
+      },
+      "lexical_baseline": "off_intent"
+    },
+    {
+      "query": "RAG citation evaluation",
+      "title": "Introducing our assistant",
+      "snippet": "Discover the future of productive work. Learn more today.",
+      "answers": {
+        "intent": {
+          "type": "choice",
+          "choice": "insufficient",
+          "probabilities": {
+            "insufficient": 0.9,
+            "matches": 0.05,
+            "off_intent": 0.05
+          },
+          "confidence": 0.45
+        },
+        "thin_evidence": {
+          "type": "noul",
+          "noul": 0.8
+        }
+      },
+      "model": "SIMULATED — NOT JEV",
+      "usage": null,
+      "elapsed_ms": null,
+      "provenance": "manufactured-fixture",
+      "decision": {
+        "route": "human_review",
+        "requires_page_review": true,
+        "intent": "insufficient",
+        "confidence": 0.45
+      },
+      "lexical_baseline": "off_intent"
+    },
+    {
+      "query": "LangGraph human approval tutorial",
+      "title": "Build persistent review gates",
+      "snippet": "A walkthrough of LangGraph interrupts and SQLite checkpoints for human approval.",
+      "answers": {
+        "intent": {
+          "type": "choice",
+          "choice": "matches",
+          "probabilities": {
+            "insufficient": 0.05,
+            "matches": 0.9,
+            "off_intent": 0.05
+          },
+          "confidence": 0.9
+        },
+        "thin_evidence": {
+          "type": "noul",
+          "noul": 0.8
+        }
+      },
+      "model": "SIMULATED — NOT JEV",
+      "usage": null,
+      "elapsed_ms": null,
+      "provenance": "manufactured-fixture",
+      "decision": {
+        "route": "no_clear_intent_gap",
+        "requires_page_review": true,
+        "intent": "matches",
+        "confidence": 0.9
+      },
+      "lexical_baseline": "matches"
+    },
+    {
+      "query": "LangGraph human approval tutorial",
+      "title": "Workflow software discounts",
+      "snippet": "Our subscription sale ends soon. Sign up for team workflow software.",
+      "answers": {
+        "intent": {
+          "type": "choice",
+          "choice": "off_intent",
+          "probabilities": {
+            "insufficient": 0.05,
+            "matches": 0.05,
+            "off_intent": 0.9
+          },
+          "confidence": 0.9
+        },
+        "thin_evidence": {
+          "type": "noul",
+          "noul": 0.8
+        }
+      },
+      "model": "SIMULATED — NOT JEV",
+      "usage": null,
+      "elapsed_ms": null,
+      "provenance": "manufactured-fixture",
+      "decision": {
+        "route": "investigate_intent_gap",
+        "requires_page_review": true,
+        "intent": "off_intent",
+        "confidence": 0.9
+      },
+      "lexical_baseline": "off_intent"
+    },
+    {
+      "query": "local document search privacy",
+      "title": "Local document indexing",
+      "snippet": "Keep document processing and retrieval on your own machine without a remote indexing service.",
+      "answers": {
+        "intent": {
+          "type": "choice",
+          "choice": "matches",
+          "probabilities": {
+            "insufficient": 0.05,
+            "matches": 0.9,
+            "off_intent": 0.05
+          },
+          "confidence": 0.9
+        },
+        "thin_evidence": {
+          "type": "noul",
+          "noul": 0.8
+        }
+      },
+      "model": "SIMULATED — NOT JEV",
+      "usage": null,
+      "elapsed_ms": null,
+      "provenance": "manufactured-fixture",
+      "decision": {
+        "route": "no_clear_intent_gap",
+        "requires_page_review": true,
+        "intent": "matches",
+        "confidence": 0.9
+      },
+      "lexical_baseline": "matches"
+    },
+    {
+      "query": "local document search privacy",
+      "title": "Document tools",
+      "snippet": "A directory lists many document tools, with no details about processing or privacy.",
+      "answers": {
+        "intent": {
+          "type": "choice",
+          "choice": "insufficient",
+          "probabilities": {
+            "insufficient": 0.9,
+            "matches": 0.05,
+            "off_intent": 0.05
+          },
+          "confidence": 0.4
+        },
+        "thin_evidence": {
+          "type": "noul",
+          "noul": 0.8
+        }
+      },
+      "model": "SIMULATED — NOT JEV",
+      "usage": null,
+      "elapsed_ms": null,
+      "provenance": "manufactured-fixture",
+      "decision": {
+        "route": "human_review",
+        "requires_page_review": true,
+        "intent": "insufficient",
+        "confidence": 0.4
+      },
+      "lexical_baseline": "matches"
+    }
+  ]
+}
