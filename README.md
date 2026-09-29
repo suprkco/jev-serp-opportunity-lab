@@ -11,7 +11,7 @@ This lab asks narrow questions about supplied search-result snippets and separat
 
 ## Demo
 
-[Generated sample dashboard](docs/demo/index.html) · [Machine-readable simulation](docs/demo/report.json)
+[Open the hosted policy simulation](https://suprkco.github.io/jev-serp-opportunity-lab/) · [Machine-readable simulation](docs/demo/report.json)
 
 Download the repository and open `docs/demo/index.html` locally, or generate a fresh report with the quickstart below. The eight examples and their responses are **manufactured fixtures, not real SERP data or Jev predictions**. The dashboard prominently labels simulation mode. No traffic, search-volume, latency or cost claim from a third-party demo is reproduced here.
 
