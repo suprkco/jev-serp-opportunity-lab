@@ -1,1 +1,52 @@
-<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>Jev SERP Opportunity Lab</title><style>body{font:16px system-ui;background:#f3f1e8;color:#202820;margin:40px auto;max-width:1100px;padding:0 24px}h1{font-size:48px;letter-spacing:-2px}header{border-bottom:2px solid;padding-bottom:20px}.warning{background:#ffdc8b;padding:16px}main{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}article{border:1px solid #b9c1ae;background:#fffef6;padding:20px}h2{font-size:21px}h3{font-size:16px}p{line-height:1.6}small{color:#547153;font-weight:bold}footer{padding:30px 0}</style><header><small>KILIAN CODACCIONI / DECISION SYSTEMS</small><h1>Find intent gaps.<br>Keep the uncertainty.</h1></header><p class="warning">SIMULATED RESPONSES: no Jev API calls or model benchmark.</p><p>fixture · 8 supplied results · No search-volume or ranking guarantees</p><main><article><small>no_clear_intent_gap</small><h2>read-only SQL MCP server</h2><h3>SQL MCP analytics guide</h3><p>A tutorial explains how to restrict database access to read-only queries through an MCP server.</p><p>Intent: matches · Confidence: 0.9</p><p>Page review required: True</p></article><article><small>investigate_intent_gap</small><h2>read-only SQL MCP server</h2><h3>Managed database pricing</h3><p>Compare subscription tiers and storage pricing for hosted SQL databases.</p><p>Intent: off_intent · Confidence: 0.9</p><p>Page review required: True</p></article><article><small>no_clear_intent_gap</small><h2>RAG citation evaluation</h2><h3>Measure citation quality</h3><p>Evaluate retrieval and verify whether generated claims are supported by cited passages.</p><p>Intent: matches · Confidence: 0.9</p><p>Page review required: True</p></article><article><small>human_review</small><h2>RAG citation evaluation</h2><h3>Introducing our assistant</h3><p>Discover the future of productive work. Learn more today.</p><p>Intent: insufficient · Confidence: 0.45</p><p>Page review required: True</p></article><article><small>no_clear_intent_gap</small><h2>LangGraph human approval tutorial</h2><h3>Build persistent review gates</h3><p>A walkthrough of LangGraph interrupts and SQLite checkpoints for human approval.</p><p>Intent: matches · Confidence: 0.9</p><p>Page review required: True</p></article><article><small>investigate_intent_gap</small><h2>LangGraph human approval tutorial</h2><h3>Workflow software discounts</h3><p>Our subscription sale ends soon. Sign up for team workflow software.</p><p>Intent: off_intent · Confidence: 0.9</p><p>Page review required: True</p></article><article><small>no_clear_intent_gap</small><h2>local document search privacy</h2><h3>Local document indexing</h3><p>Keep document processing and retrieval on your own machine without a remote indexing service.</p><p>Intent: matches · Confidence: 0.9</p><p>Page review required: True</p></article><article><small>human_review</small><h2>local document search privacy</h2><h3>Document tools</h3><p>A directory lists many document tools, with no details about processing or privacy.</p><p>Intent: insufficient · Confidence: 0.4</p><p>Page review required: True</p></article></main><footer>Jev connector + explicit routing policy. Inspect report.json for response provenance.</footer></html>
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>Jev terminal transcript</title><style>body{margin:0;background:#151515;color:#deded8;font:15px/1.7 ui-monospace,Consolas,monospace}main{max-width:1000px;margin:40px auto;padding:0 24px}pre{white-space:pre-wrap;overflow-wrap:anywhere}a{color:#d5b58c}</style><main><p>Static terminal transcript / run locally: python -m serp.cli</p><pre>jev / intent triage
+SIMULATED RESPONSES: no Jev API calls or model benchmark.
+
+[01] read-only SQL MCP server
+  no_clear_intent_gap | confidence 0.90
+  SQL MCP analytics guide
+  A tutorial explains how to restrict database access to read-only queries through an MCP server.
+  Page review required: True
+
+[02] read-only SQL MCP server
+  investigate_intent_gap | confidence 0.90
+  Managed database pricing
+  Compare subscription tiers and storage pricing for hosted SQL databases.
+  Page review required: True
+
+[03] RAG citation evaluation
+  no_clear_intent_gap | confidence 0.90
+  Measure citation quality
+  Evaluate retrieval and verify whether generated claims are supported by cited passages.
+  Page review required: True
+
+[04] RAG citation evaluation
+  human_review | confidence 0.45
+  Introducing our assistant
+  Discover the future of productive work. Learn more today.
+  Page review required: True
+
+[05] LangGraph human approval tutorial
+  no_clear_intent_gap | confidence 0.90
+  Build persistent review gates
+  A walkthrough of LangGraph interrupts and SQLite checkpoints for human approval.
+  Page review required: True
+
+[06] LangGraph human approval tutorial
+  investigate_intent_gap | confidence 0.90
+  Workflow software discounts
+  Our subscription sale ends soon. Sign up for team workflow software.
+  Page review required: True
+
+[07] local document search privacy
+  no_clear_intent_gap | confidence 0.90
+  Local document indexing
+  Keep document processing and retrieval on your own machine without a remote indexing service.
+  Page review required: True
+
+[08] local document search privacy
+  human_review | confidence 0.40
+  Document tools
+  A directory lists many document tools, with no details about processing or privacy.
+  Page review required: True
+
+8 results | mode=fixture</pre><p><a href="report.json">Inspect JSON</a></p></main></html>

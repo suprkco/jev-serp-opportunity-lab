@@ -10,6 +10,7 @@ from serp.engine import (
     simulated_judge,
     write_html,
 )
+from serp.terminal import render
 
 
 def main():
@@ -18,6 +19,7 @@ def main():
     parser.add_argument('--input', default='data/synthetic_serp.json')
     parser.add_argument('--output', default='output')
     parser.add_argument('--max-requests', type=int, default=0, help='Explicit upper bound for paid API calls; live mode only')
+    parser.add_argument('--json', action='store_true', help='Print the complete JSON report')
     args = parser.parse_args()
     records = load_records(args.input)
     if args.mode == 'live' and not len(records) <= args.max_requests <= 50:
@@ -34,7 +36,8 @@ def main():
     output.mkdir(parents=True, exist_ok=True)
     (output/'report.json').write_text(json.dumps(report, indent=2, ensure_ascii=False), encoding='utf-8')
     write_html(report, output/'index.html')
-    print(f'Wrote {len(rows)} records to {output}; mode={args.mode}')
+    (output/'report.txt').write_text(render(report) + '\n', encoding='utf-8')
+    print(json.dumps(report, ensure_ascii=False) if args.json else render(report))
 
 if __name__ == '__main__':
     main()

@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>Jev terminal transcript</title><style>body{margin:0;background:#151515;color:#deded8;font:15px/1.7 ui-monospace,Consolas,monospace}main{max-width:1000px;margin:40px auto;padding:0 24px}pre{white-space:pre-wrap;overflow-wrap:anywhere}a{color:#d5b58c}</style><main><p>Static terminal transcript / run locally: python -m serp.cli</p><pre>jev / intent triage
+jev / intent triage
 SIMULATED RESPONSES: no Jev API calls or model benchmark.
 
 [01] read-only SQL MCP server
@@ -49,4 +49,4 @@ SIMULATED RESPONSES: no Jev API calls or model benchmark.
   A directory lists many document tools, with no details about processing or privacy.
   Page review required: True
 
-8 results | mode=fixture</pre><p><a href="report.json">Inspect JSON</a></p></main></html>
+8 results | mode=fixture

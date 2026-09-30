@@ -13,7 +13,7 @@ This lab asks narrow questions about supplied search-result snippets and separat
 
 [Open the hosted policy simulation](https://suprkco.github.io/jev-serp-opportunity-lab/) · [Machine-readable simulation](docs/demo/report.json)
 
-Download the repository and open `docs/demo/index.html` locally, or generate a fresh report with the quickstart below. The eight examples and their responses are **manufactured fixtures, not real SERP data or Jev predictions**. The dashboard prominently labels simulation mode. No traffic, search-volume, latency or cost claim from a third-party demo is reproduced here.
+Download the repository and open `docs/demo/index.html` locally, or generate a fresh report with the quickstart below. The eight examples and their responses are **manufactured fixtures, not real SERP data or Jev predictions**. The terminal output and static transcript explicitly label simulation mode. No traffic, search-volume, latency or cost claim from a third-party demo is reproduced here.
 
 ## Architecture
 
@@ -27,7 +27,7 @@ flowchart LR
     E --> F
     F --> G[Confidence and intent policy]
     G --> H[Investigate / review / no clear gap]
-    H --> I[Escaped HTML + JSON report]
+    H --> I[Terminal + JSON + optional HTML transcript]
 ```
 
 ## Tech stack
@@ -45,7 +45,7 @@ pip install -r requirements.txt -r requirements-dev.txt
 python -m serp.cli
 ```
 
-Open `output/index.html`. Alternatively, `docker compose up --build` writes the report into its named volume; retrieve it with `docker compose cp demo:/app/output ./output` after the service finishes.
+Results appear directly in the terminal. Use `--json` for machine-readable stdout; `output/report.txt` preserves the plain transcript. `output/index.html` is an optional static transcript, not an interactive terminal. Alternatively, `docker compose up --build` writes the report into its named volume; retrieve it with `docker compose cp demo:/app/output ./output` after the service finishes.
 
 ### Live Jev mode
 

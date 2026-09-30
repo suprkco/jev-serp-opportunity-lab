@@ -89,14 +89,12 @@ def lexical_baseline(record):
     return 'matches' if overlap >= 0.5 else 'off_intent'
 
 def write_html(report, path):
-    def escape(value):
-        return html.escape(str(value))
-    cards = []
-    for row in report['results']:
-        cards.append('<article><small>'+escape(row['decision']['route'])+'</small><h2>'+escape(row['query'])+'</h2><h3>'+escape(row['title'])+'</h3><p>'+escape(row['snippet'])+'</p><p>Intent: '+escape(row['decision']['intent'])+' · Confidence: '+escape(row['decision']['confidence'])+'</p><p>Page review required: '+escape(row['decision']['requires_page_review'])+'</p></article>')
-    document = '''<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>Jev SERP Opportunity Lab</title><style>body{font:16px system-ui;background:#f3f1e8;color:#202820;margin:40px auto;max-width:1100px;padding:0 24px}h1{font-size:48px;letter-spacing:-2px}header{border-bottom:2px solid;padding-bottom:20px}.warning{background:#ffdc8b;padding:16px}main{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}article{border:1px solid #b9c1ae;background:#fffef6;padding:20px}h2{font-size:21px}h3{font-size:16px}p{line-height:1.6}small{color:#547153;font-weight:bold}footer{padding:30px 0}</style><header><small>KILIAN CODACCIONI / DECISION SYSTEMS</small><h1>Find intent gaps.<br>Keep the uncertainty.</h1></header>'''
-    document += '<p class="warning">'+escape(report['disclaimer'])+'</p><p>'+escape(report['mode'])+' · '+str(len(report['results']))+' supplied results · No search-volume or ranking guarantees</p><main>'+''.join(cards)+'</main><footer>Jev connector + explicit routing policy. Inspect report.json for response provenance.</footer></html>'
+    from serp.terminal import render
+    document = '<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>Jev terminal transcript</title>'
+    document += '<style>body{margin:0;background:#151515;color:#deded8;font:15px/1.7 ui-monospace,Consolas,monospace}main{max-width:1000px;margin:40px auto;padding:0 24px}pre{white-space:pre-wrap;overflow-wrap:anywhere}a{color:#d5b58c}</style>'
+    document += '<main><p>Static terminal transcript / run locally: python -m serp.cli</p><pre>' + html.escape(render(report)) + '</pre><p><a href="report.json">Inspect JSON</a></p></main></html>'
     Path(path).write_text(document, encoding='utf-8')
+
 
 def load_records(path):
     path = Path(path)
